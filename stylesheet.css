@@ -168,8 +168,15 @@ https://www.w3schools.com/howto/howto_js_slideshow.asp
 
 .mySlides1, .mySlides2, .mySlides3 {display: none}
 
-.slideshow-container img {
-  vertical-align: middle; 
+.mySlides1 img {
+  width: 100%;
+}
+
+.mySlides2 img {
+  width: 100%;
+}
+
+.mySlides3 img {
   width: 100%;
 }
 
