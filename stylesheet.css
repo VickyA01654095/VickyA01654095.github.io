@@ -14,7 +14,7 @@ body {
 .bigsquare{
   min-height: 100%;
   overflow: hidden;
-  width: 90%;
+  width: 1200px;
   background-color: rgb(255,255,255, 0.7);
   margin: auto auto;
   padding: 5px 10px;
