@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculadora de IMC</title>
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link rel="stylesheet" href="estilos.css">
+		<script type="text/javascript" src="calculos.js"></script>
+	</head>
+
+	<body>
+		<div id="pag1">
+			<div class="titulo">Calcula tu IMC</div>
+
+			<div class="contenedor">
+				<div class="formulario">
+					<div class="cajaLabel">Estatura (m)</div>
+					<form><input type="number" name="estatura" class="cajaNum" id="altura"></form>
+				</div>
+
+				<div class="formulario">
+					<div class="cajaLabel">Peso (Kg)</div>
+					<form><input type="number" name="peso" class="cajaNum" id="peso"></form>
+				</div>
+			</div>
+
+			<div class="botonCaja"><button type="button" class="boton" onclick="calcularIMC()">¡Calcular!</button></div>
+		</div>
+
+		<div id="pag2">
+			<div class="conjunto">
+				<div class="contenedor2">
+					<div id="edoIMC">Su IMC es normal</div>
+					<div class="info">
+						<p id="imc">IMC = 21.5</p>
+						Datos ingresados:
+
+						<table>
+							<tr>
+								<td>Estatura:</td>
+								<td id="alt">1.50 m</td>
+							</tr>
+							<tr>
+								<td>Peso:</td>
+								<td id="pes">50 kg</td>
+							</tr>
+
+						</table>
+					</div>
+				</div>
+
+				<div class="botonCaja"><button type="button" class="boton" onclick="returnMain()">Hacer otro cálculo</button></div>
+			</div>
+
+			<div class="imagen">
+				<img src="bajo.png" id="p1">
+				<img src="normal.png" id="p2">
+				<img src="sobre.png" id="p3">
+				<img src="ob1.png" id="p4">
+				<img src="ob2.png" id="p5">
+				<img src="obmor.png" id="p6">
+
+			</div>
+		</div>
+
+	</body>
+
+</html>
