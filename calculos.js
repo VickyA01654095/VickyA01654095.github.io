@@ -8,6 +8,8 @@ function changePage(){
 
 function returnMain(){
 	hideImg();
+	document.getElementById("altura").value = null;
+	document.getElementById("peso").value = null;
 	document.getElementById("pag1").style.display = 'block';
 	document.getElementById("pag2").style.display = 'none';
 }
@@ -23,8 +25,11 @@ function calcularIMC(){
 	var peso = parseFloat(document.getElementById("peso").value);
 	var imc = peso/(altura*altura);
 
-	if (altura <= 0 || peso <= 0) {
-		alert("¡La altura y el peso deben ser valores mayores a 0!")
+	if (isNaN(altura) || isNaN(peso)) {
+		alert("¡La altura y el peso deben ser valores numéricos!");
+	}
+	else if (altura <= 0 || peso <= 0) {
+		alert("¡La altura y el peso deben ser valores mayores a 0!");
 	}
 	else{
 
